@@ -1,0 +1,334 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-width: 320px;
+    font-family: 'Roboto', sans-serif;
+    background: #333;
+}
+
+nav {
+    height: 50px;
+    width: 100%;
+    padding: 8px;
+    background: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo {
+    width: 30px;
+    height: 100%;
+    display: flex;
+}
+
+.logo img {
+    height: 100%;
+    width: 100%;
+}
+
+.logo p {
+    display: none;
+}
+
+.barra-navegacion {
+    border-radius: 10px;
+    padding: 3px 8px;
+    background-color:#fff;
+    flex-grow: 0.3;
+    display: flex;
+    justify-content: space-between;
+}
+
+.barra-navegacion:hover {
+    border: 2px solid rgb(255, 230, 0);
+}
+
+.barra-navegacion input {
+    border: none;
+    outline: none;
+    flex-grow: 1;
+}
+
+.barra-navegacion input::placeholder {
+    color: #555;
+}
+
+.barra-navegacion i {
+    color: #000;
+}
+
+.barra-navegacion i:hover {
+    color: rgb(255, 230, 2);
+}
+
+.movil-icons a {
+    color: #fff;
+}
+
+.icono-carrito {
+    margin-right: 5px;
+}
+
+.icono-carrito:hover, .icono-bars:hover {
+    color: rgb(255, 230, 2);
+}
+
+.icono-user {
+    display: none;
+    color: #fff;
+}
+
+.sub-nav {
+    display: none;
+}
+.bannner {
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+
+
+
+
+main {
+    width: 90%;
+    margin: 15px auto;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.productos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+main section article {
+    background-color: #fff;    
+    margin: 10px 0px;
+    margin-bottom: 20px;
+    outline:  rgb(255, 230, 2) 1px solid;
+    width: 60%;
+    margin: 10px auto;
+    margin-bottom: 20px;
+}
+
+main section article a {
+    color: #000;
+}
+
+main section article {
+    width: 90%;
+}
+
+main section article p, main section article h4 {
+    font-size: 14px;
+}
+
+main section a {
+    text-decoration: none;
+}
+
+main section h3 {
+    display: inline-block;
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+main section h3:hover {
+    color: rgb(255, 230, 2);
+}
+
+main section article img {
+    width: 100%;
+}
+
+main section article i,
+.descuento {
+    color: #39b54a;
+}
+
+article .main-article{
+    width: 100%;
+    background-color: #ddd;
+    position: relative;
+    padding: 5px;
+}
+
+article .main-article .div-precio-descuento {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.precio, .descuento, .descripcion {
+    margin-bottom: 5px;
+}
+
+.descuento {
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+
+
+@media (min-width: 420px) {
+
+    .sub-nav {
+        display: flex;
+        justify-content: space-between;
+        background: #555;
+        border-bottom: 2px solid rgb(255, 230, 0);
+        width: 100%;
+        padding: 0 5px;
+    }
+
+    .sub-nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+    .sub-nav li {
+        margin: 0 5px;
+    }
+
+    .sub-nav li i {
+        margin-left: 3px;
+    }
+
+    .sub-nav ul a {
+        text-decoration: none;
+        color: #fff;
+        display: inline-block;
+        padding: 5px 0;
+        font-size: 14px;
+    }
+
+    .sub-nav ul a:hover {
+        color:rgb(255, 230, 2)
+    }
+
+    .link-logo {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .logo {
+        align-items: center;
+        margin-right: 20px;
+        position: relative;
+        left: -8px;
+    }
+
+    .logo p {
+        display: block;
+        font-size: 11px;
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-weight: bold;
+    }
+
+    .barra-navegacion {
+        border-radius: 0;
+        border-bottom: 4px solid rgb(255, 230, 0);
+        background-color: rgba(204, 204, 204, 0.952);
+    }
+
+    .barra-navegacion:hover {
+        border: none;
+        border-bottom: 4px solid rgb(255, 230, 0);
+    }
+
+    .barra-navegacion input {
+        padding: 3px;
+        background-color: transparent;
+    }
+
+    .barra-navegacion input:focus {
+        background: linear-gradient(to top, #ccc, #fff);
+    }
+
+    .barra-navegacion i {
+        margin-left: 7px;
+        margin-top: 2px;
+    }
+
+    .icono-bars, .icono-carrito {
+        display: none;
+    }
+    
+    .icono-user {
+        display: block;
+        font-size: 20px;
+    }
+
+    .bannner {
+        width:90%;
+    }
+
+
+
+
+    main {
+        margin: 30px auto;
+    }
+
+    section {
+        margin-bottom: 25px;
+    }
+
+    main section h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    main section article {
+        box-shadow: none;
+    }
+
+    main section article .descripcion{
+        display: block;
+    }
+
+    main section article:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    main section .productos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    main section .productos article{
+        width: 45%;
+    }
+
+    .precio,
+    .descuento{
+        width: 50%;
+    }
+}
+
+@media (min-width: 769px){
+    main section .productos article{
+        width: 22%;
+    }
+
+    main section h3 {
+        font-size: 23px;
+    }
+}
